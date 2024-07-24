@@ -1,6 +1,6 @@
 document.getElementById('search-button').addEventListener('click', function() {
     const searchQuery = document.getElementById('search-input').value.toLowerCase();
-    const blockedSites = ['example.com', 'blockedsite.com'];
+    const blockedSites = ['yandex.ru', 'yandex.com'];
     
     if (blockedSites.some(site => searchQuery.includes(site))) {
         alert('Этот сайт заблокирован.');
